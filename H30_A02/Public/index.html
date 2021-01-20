@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Chat room</title>
+    <link rel="stylesheet" href="style/index.css" type="text/css">
+</head>
+<body>
+    <header>
+        <h1>Isekai Live</h1>
+
+    </header>
+
+
+
+    <div id="registration">
+        <div>
+            <h1>Welcome to Isekai Live</h1>
+            <h2>Please register a name before proceeding</h2>
+            <form id="register">
+                <label for="name">Name: </label>
+                <input type="text" id="name" name="name">
+                <input type="submit" value="Register">
+            </form>
+        </div>
+
+    </div>
+    <main>
+
+        <div class="window">
+            <section id="system">
+                <h3>Taking tricks <span id="waiting"></span></h3>
+
+                <button id="leave">Leave</button>
+                <button class="valid" id="btn">Start</button>
+            </section>
+
+            <div id="game">
+                <div id="trump"><h3>Trump</h3><p id="txtTrump"></p></div>
+                <div id="table">
+                    <div id="p1" class="player">
+                        <div class="name"></div>
+                    </div>
+                    <div id="p2" class="player">
+                        <div class="name"></div>
+                    </div>
+                    <div id="p3" class="player">
+                        <div class="name"></div>
+                    </div>
+                    <div id="p4" class="player">
+                        <div class="name"></div>
+                    </div>
+                    <div id="p5" class="player">
+                        <div class="name"></div>
+                    </div>
+                    <div id="p6" class="player">
+                        <div class="name"></div>
+                    </div>
+                </div>
+
+                <div id="hand">
+
+                </div>
+            </div>
+
+        </div>
+
+        <div class="window">
+            <div id="chat">
+                <h2>Chat</h2>
+
+                <section id="board">
+
+                    <h4>Welcome to Isekai Live!</h4>
+                </section>
+
+                <form id="msg">
+                    <label>
+                        <input id="message" type="text" autocomplete="off">
+                        <input type="submit" value="Send" id="send">
+                    </label>
+                </form>
+            </div>
+        </div>
+
+    </main>
+    <footer>
+
+    </footer>
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="script/index.js"></script>
+</body>
+</html>
